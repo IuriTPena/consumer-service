@@ -1,8 +1,9 @@
-package com.cognizant.account.domain;
+package com.cognizant.consumer.domain;
 
-import java.io.Serializable;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-public class Account implements Serializable {
+@Document(collection = "Account")
+public class Account {
     private String accountNumber;
     private String firstName;
     private String lastName;

@@ -1,4 +1,4 @@
-package com.cognizant.account.domain;
+package com.cognizant.consumer.domain;
 
 import java.io.Serializable;
 
@@ -43,7 +43,7 @@ public class Prize implements Serializable {
         return "Prize{" +
                 "id=" + id +
                 ", value=" + value +
-                ", account=" + account +
+                ", consumer=" + account +
                 '}';
     }
 }

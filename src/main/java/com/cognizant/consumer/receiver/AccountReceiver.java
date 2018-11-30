@@ -1,6 +1,6 @@
-package com.cognizant.account.receiver;
+package com.cognizant.consumer.receiver;
 
-import com.cognizant.account.domain.Account;
+import com.cognizant.consumer.domain.Account;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
