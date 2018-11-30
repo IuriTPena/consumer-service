@@ -14,7 +14,7 @@ public class AccountReceiver {
 //	MongoCollection<Account> collection = database.getCollection("information");
 
     @JmsListener(destination = "AccountQueue", containerFactory = "myFactory")
-    public void receiveMessage(Account account) {
+    public void receiveMessage(final Account account) {
         String accountMessage = "<" + accountCounter + "> Received1 <" + account + ">";
         System.out.println(accountMessage);
         accountCounter++;
